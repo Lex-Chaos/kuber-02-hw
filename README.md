@@ -84,6 +84,20 @@ spec:
 
 [Манифест сервиса](https://github.com/Lex-Chaos/kuber-02-hw/blob/main/files/svc-netology-web.yaml):
 
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: netology-svc
+  namespace: default
+spec:
+  selector:
+    app: netology-web
+  ports:
+  - protocol: TCP
+    port: 8080
+```
+
 Созданные объекты:
 
 ![Объекты](https://github.com/Lex-Chaos/kuber-02-hw/blob/main/img/Task2-1.png)
